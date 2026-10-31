@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumari Sneha | Frontend Developer</title>
+<meta name="description" content="Portfolio of Kumari Sneha, a BCA student and frontend development intern building projects with HTML, CSS and JavaScript.">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  /* Runs before first paint so the theme and animations don't flash */
+  (function () {
+    var r = document.documentElement, t = null;
+    r.classList.add("js");
+    try { t = localStorage.getItem("theme"); } catch (e) {}
+    if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    r.setAttribute("data-theme", t);
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Back to top">KS</a>
+    <nav id="links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch between light and dark theme">◐</button>
+    <button class="icon-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <h1>Hi, I’m Kumari Sneha. I build things for the web.</h1>
+        <p class="lead">I’m a BCA student from Mathura who learned Java in school and now builds with HTML, CSS and JavaScript. I like turning small ideas into pages that work.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <aside class="log" aria-label="Build log">
+        <h2>Build log</h2>
+        <ul>
+          <li><span>Calculator</span><small>Shipped</small></li>
+          <li><span>This portfolio</span><small>Shipped</small></li>
+          <li class="next"><span>Next project</span><small>Up next</small></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="alt" id="about">
+    <div class="wrap">
+      <h2 class="sec-title">About me</h2>
+      <div class="about">
+        <div>
+          <p>I’m a second-year BCA student at Rajiv Academy for Technology and Management in Mathura. I studied Java for four years at St. Francis School, including boolean algebra and logic circuits, and at college I’ve worked with C and Python.</p>
+          <p>Frontend development is where I’m putting my time now. I enjoy the part where an idea turns into something you can click, and I’m building a habit of finishing small projects and putting them online.</p>
+          <p>I also love vibe coding. I enjoy using AI tools to try ideas quickly, and I use what I build to understand how the code works.</p>
+          <p>Since October 2026 I’ve been a frontend development intern at CodeAlpha.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Studying</dt><dd>BCA, 2nd year</dd></div>
+          <div><dt>Focus</dt><dd>Frontend development</dd></div>
+          <div><dt>Internship</dt><dd>CodeAlpha, since October 2026</dd></div>
+          <div><dt>Based in</dt><dd>Mathura, Uttar Pradesh</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2 class="sec-title">Skills</h2>
+      <p class="sec-sub">What I’ve learned and used so far, grouped by where I use it.</p>
+      <div class="skills">
+        <div class="card reveal">
+          <h3>Languages</h3>
+          <ul class="chips"><li>Java</li><li>C</li><li>Python</li></ul>
+        </div>
+        <div class="card reveal">
+          <h3>Web</h3>
+          <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript (ES6)</li><li>Responsive design</li></ul>
+        </div>
+        <div class="card reveal">
+          <h3>Tools</h3>
+          <ul class="chips"><li>Git</li><li>GitHub</li><li>GitHub Pages</li></ul>
+        </div>
+        <div class="card reveal">
+          <h3>How I work</h3>
+          <ul class="chips"><li>Vibe coding</li><li>Learning by doing</li><li>Finishing small projects</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="projects">
+    <div class="wrap">
+      <h2 class="sec-title">Projects</h2>
+      <p class="sec-sub">Things I’ve built. The source code for each one is on GitHub.</p>
+      <div class="projects">
+        <!-- To add a project, copy one <article> block and change the text and links. -->
+        <article class="card reveal">
+          <h3>Calculator</h3>
+          <p>A calculator with all four arithmetic operations, a live display, clear and delete keys, and full keyboard support.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="links">
+            <a href="calculator/">Live demo</a>
+            <!-- EDIT: replace your-username and your-repo with your GitHub username and repository name -->
+            <a href="https://github.com/your-username/your-repo/tree/main/calculator">Source code</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <h3>This portfolio</h3>
+          <p>A responsive personal site with smooth scrolling, scroll animations, hover effects and a light and dark theme.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="links">
+            <a href="https://github.com/your-username/your-repo">Source code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="wrap">
+      <h2 class="sec-title">Resume</h2>
+      <ul class="timeline">
+        <li class="reveal">
+          <h3>Frontend Development Intern, CodeAlpha</h3>
+          <p>October 2026 to present, Mathura. Building responsive web projects with HTML, CSS and JavaScript, including a calculator and this portfolio, and publishing them on GitHub.</p>
+        </li>
+        <li class="reveal">
+          <h3>BCA, Rajiv Academy for Technology and Management</h3>
+          <p>Mathura, Uttar Pradesh. Expected graduation May 2028. Coursework so far includes C, Java and Python.</p>
+        </li>
+        <li class="reveal">
+          <h3>ICSE, St. Francis School</h3>
+          <p>Studied Java from 9th to 12th grade, including boolean algebra and logic circuits.</p>
+        </li>
+      </ul>
+      <!-- EDIT: put your resume file in this folder and name it resume.pdf -->
+      <a class="btn primary" href="resume.pdf" download>Download resume (PDF)</a>
+    </div>
+  </section>
+
+  <section class="alt" id="contact">
+    <div class="wrap">
+      <h2 class="sec-title">Contact</h2>
+      <p class="sec-sub">I’m looking for chances to build and learn. If you have a project or an opening, write to me.</p>
+      <div class="contact-links">
+        <!-- EDIT: replace your-username with your GitHub username -->
+        <a class="btn primary" href="mailto:nehasinghponia123@gmail.com">Email me</a>
+        <a class="btn" href="https://github.com/your-username">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/kumari-sneha-2432b0380">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year">2026</span> Kumari Sneha. Built with HTML, CSS and JavaScript.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
